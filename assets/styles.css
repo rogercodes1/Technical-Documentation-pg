@@ -19,6 +19,12 @@ a {
 body{
   display: flex;
 }
+code {
+  background-color: rgb(92, 126, 177);
+  padding: 15px;
+  margin: 20px;
+}
+
 nav {
   display: flex;
   flex-flow: column;
