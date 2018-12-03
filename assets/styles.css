@@ -1,3 +1,31 @@
+html {
+  box-sizing: border-box;
+  /* margin: 0; */
+  font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 header {
   /* font-size: 40px; */
+}
+body{
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  border-right: 2px solid red;
+}
+ nav header {
+   font-size: 22px;
+   margin: 10px;
+ }
+
+main {
+  margin: 20px;
 }
