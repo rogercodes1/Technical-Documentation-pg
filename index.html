@@ -28,6 +28,16 @@
           <header class='section-header-title'>
             Shortcut Array Join
           </header>
+          <p>t's common knowledge that Array#*, when supplied with a number, multiplies the size of the array by using duplicate elements:</p>
+          <code>
+            [1, 2, 3] * 3 == [1, 2, 3, 1, 2, 3, 1, 2, 3]
+          </code>
+          <p>It's not well known, however, that when given a string as an argument Array#* does a join!</p>
+          <code>
+            %w{this is a test} * ", " &emsp; &emsp; &emsp;
+            # => "this, is, a, test" &#160;
+            h = { :name => "Fred", :age => 77 }
+h.map { |i| i * "=" } * "n"              # => "age=77nname=Fred"</code>
 
         </section>
         <section id="topic" class="main-section">
