@@ -13,9 +13,9 @@
         <a href="#Shortcut_Array_Join" class="nav-link">
           Shortcut for Array#join
         </a>
-        <a href="hey" class="nav-link"></a>
-        <a href="hey" class="nav-link"></a>
-        <a href="hey" class="nav-link"></a>
+        <a href="#Each" class="nav-link"> Map / Each </a>
+        <a href="#Map" class="nav-link"> Map </a>
+        <a href="#Double_Colon" class="nav-link"> Double Colon</a>
 
       </nav>
       <main id="main-doc">
@@ -24,6 +24,7 @@
           <p> Simple documentation for favorite ruby items.</p>
 
         </section>
+
         <section id="Shortcut_Array_Join" class="main-section">
           <header class='section-header-title'>
             Shortcut Array Join
@@ -46,24 +47,66 @@
           </code>
 
         </section>
-        <section id="topic" class="main-section">
+
+        <section id="Each" class="main-section">
           <header class='section-header-title'>
-            Second
+            <a href="https://ruby-doc.org/core-2.2.0/Array.html#method-i-each" target="_blank">Each</a>
           </header>
+          <p>
+            Calls the given block once for each element in self, passing that element as a paramete
+          </p>
+
+          <code>
+            a = [ "a", "b", "c" ] <br>
+            a.each {|x| print x, " -- " } <br>
+            <br>
+            produces:br
+            a -- b -- c --
+          </code>
 
         </section>
-        <section id="topic" class="main-section">
+
+        <section id="Map" class="main-section">
           <header class='section-header-title'>
-            Third
+            <a href="" target="_blank"> Map </a>
           </header>
+          <p>
+            Creates a new array containing the values returned by the block. <br>
+            If no block is given, an Enumerator is returned instead.
+          </p>
+
+          <code>
+            a = [ "a", "b", "c", "d" ] <br>
+            a.map! {|x| x + "!" } <br>
+            a #=>  [ "a!", "b!", "c!", "d!" ] <br>
+            a.collect!.with_index {|x, i| x[0...i] } <br>
+            a #=>  ["", "b", "c!", "d!"] <br>
+          </code>
 
         </section>
-        <section id="topic" class="main-section">
+
+        <section id="Double_Colon" class="main-section">
           <header class='section-header-title'>
-            Fourth
+            Double Colon
           </header>
+          <p>
+            Call a Method Using Double Colon
+
+          </p>
+
+          <code>
+            'a,b,c'::size <br>
+
+            Will produce: <br>
+            6
+            <br>
+            or <br>
+            [1,2,3,4,5]::size <br>
+
+          </code>
 
         </section>
+
       </main>
 
     <script
