@@ -22,11 +22,11 @@ body{
 code {
   display:block;
   text-align: left;
-  white-space: pre;
+  white-space: pre; /* LOOKUP */
   position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
+  word-break: normal;  /* LOOKUP */
+  word-wrap: normal; /* LOOKUP */
+  line-height: 2; /* LOOKUP */
   background-color:#f7f7f7;
   padding:15px;
   margin:10px;
