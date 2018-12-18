@@ -36,12 +36,16 @@ code {
 nav {
   display: flex;
   flex-flow: column;
-  margin: 10px;
+  margin: 15px;
+  padding-right: 8px;
   border-right: 2px solid red;
 }
  nav header {
    font-size: 22px;
    margin: 10px;
+ }
+ .nav-link{
+   margin: 5px 0;
  }
 
 main {
