@@ -20,9 +20,17 @@ body{
   display: flex;
 }
 code {
-  background-color: rgb(92, 126, 177);
-  padding: 15px;
-  margin: 20px;
+  display:block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+  border-radius:5px;
 }
 
 nav {
@@ -39,11 +47,8 @@ nav {
 main {
   margin: 20px;
 }
-@media only screen and (max-width: 480px) {
-  #navbar {
-    display: none;
-  }
-  body {
-    color: blue;
-  }
+
+@media only screen and (max-width: 815px){
+
+
 }
